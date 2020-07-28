@@ -64,14 +64,14 @@ function getDateBetween(date1,date2)
                 });
                 content+="</thead>";
                     content += "<tbody>";
-                        let j=1; //here we print the dates in the calendar body
-                        let displayNum , idMonth;
-                        while(j< lastDate.getDate()){
+                       let j=1;  //here we print the dates in the calendar body
+                        let displayNum;
+                        while(j <= lastDate.getDate()){
                             //we display the dates in the row
                             content+="<tr>";
-                                for(let k=0;k<7;k++) //since we have seven days in the week we ned to display till seven days
+                                for(let k = 0; k < 7; k ++) //since we have seven days in the week we ned to display till seven days
                                 {
-                                    displayNum =j< 10 ? "0" +j :j; // the way our dates will be displayed
+                                    displayNum =j < 10 ?"0" +j :j; // the way our dates will be displayed
                                     if(j==1){
                                             if(firstDate.toString().split(" ")[0] == weekDays[k].shortDay)
                                             {
@@ -101,6 +101,6 @@ function getDateBetween(date1,date2)
     return content;
 }
 //starting portion of the code
-let content = getDateBetween("2020/01/01", "2021/01/01"); //helps us to get the date between the starting and the ending .
+let content = getDateBetween("2020/01/01", "2020/10/01"); //helps us to get the date between the starting and the ending .
 document.getElementById("calendar").innerHTML = content;
  //we are calling the html portion and wanting it to be displayed as the content of the page

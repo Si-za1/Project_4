@@ -262,20 +262,20 @@
             margin-bottom: 1rem;
             padding-bottom: .5rem;
             position: relative;
-            left:400px;
+            left:700px;
         }
         .text1{
             position: relative;
-            left:400px;
+            left:700px;
         }
         .imgContainer1{
-            transform: translateX(-360px);
+            transform: translateX(-760px);
         }
         
         .by{
             background-color:var( --button-color);
             position: relative;
-            left:650px;
+            left:70rem;
             color:#fff;
             font-family: 'Old Standard TT', serif;
             padding: 0.05rem 0.21rem ;
