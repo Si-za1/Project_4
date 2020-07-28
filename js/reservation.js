@@ -1,9 +1,6 @@
-
-
-
 function settingDate(date,day)
 {
-    date=new Date(date);
+    date = new Date(date);
     date.setDate(day); //sets the numeric date for the given 
     date.setHours(23);//we want to display the date and the hour of the current time
     return date;
@@ -11,9 +8,9 @@ function settingDate(date,day)
 
 function getDateBetween(date1,date2)
 {
-    let range1= new Date(date1); 
+    let range1 = new Date(date1); 
     //converting the string into the numeric type
-    let range2= new Date(date2);
+    let range2 = new Date(date2);
     date1=settingDate(date1, 31); //setting the date from the month till date 31 if not it will display the other month
     date2=settingDate(date2, 31);
  //now to get the end date for the each month 
@@ -37,16 +34,73 @@ function getDateBetween(date1,date2)
         }
        
     }
-    console.log(dates);
+    //console.log(dates);
+    let content="";
+    let weekDays =[
+                    {shortDay:'Mon' , fullDay:'Monday'},
+                    {shortDay:'Tue' , fullDay:'Tuesday'},
+                    {shortDay:'Wed' , fullDay:'Wednesday'},
+                    {shortDay:'Thur' , fullDay:'Thursday'},
+                    {shortDay:'Fri' ,  fullDay:'Friday'},
+                    {shortDay:'Sat' , fullDay:'Saturday'},
+                    {shortDay:'Sun' , fullDay:'Sunday'}
+                   ];
+    let lastDate, firstDate; //to store the first and last date of the each month
+    for(let i=0; i<dates.length; i++){
+        lastDate= dates[i]; //it returns the last date of the index
+        firstDate= new Date(dates[i].getFullYear(),dates[i].getMonth(),1); // format 2020-01-01 returns the first date
+        content += "<div id='calendarTable_" + (i + 1) + "'>";
+                content +=
+                        "<h2>" +
+                        firstDate.toString().split(" ")[1] +
+                        "-" +
+                        firstDate.getFullYear() +
+                        "</h2>"     ;             //it helps us to get the format "Feb - 2020 "
+            
+            content+= "<table>";
+                content+= "<thead >";
+                weekDays.map(item=>{
+                    content += "<th>"+ item.fullDay+"</th>";
+                });
+                content+="</thead>";
+                    content += "<tbody>";
+                        let j=1; //here we print the dates in the calendar body
+                        let displayNum , idMonth;
+                        while(j< lastDate.getDate()){
+                            //we display the dates in the row
+                            content+="<tr>";
+                                for(let k=0;k<7;k++) //since we have seven days in the week we ned to display till seven days
+                                {
+                                    displayNum =j< 10 ? "0" +j :j; // the way our dates will be displayed
+                                    if(j==1){
+                                            if(firstDate.toString().split(" ")[0] == weekDays[k].shortDay)
+                                            {
+                                                content += "<td>" + displayNum + "</td>";
+                                                j++;
+                                            }
+                                            else{
+                                                content+= "<td></td>";  // we display the blank
+                                            }
+                                        }
+                                        else if(j> lastDate.getDate())
+                                        {
+                                            content+= "<td></td>";
+                                        }
+                                            else{
+                                                content += "<td>" + displayNum + "</td>";
+                                                j++;
+                                            }
+                                }
+                            content +="</tr>";
+
+                        }
+                    content += "</tbody>";
+            content+="</table>";
+        content +="</div>";
+    }
+    return content;
 }
-
-
-
-
-
-
-
-
-
-let constant = getDateBetween("2020/01/01", "2021/01/01"); //helps us to get the date between the starting and the ending .
-document.getElementById("calendar").innerHTML=content; //we are calling the html portion and wanting it to be displayed as the content of the page.
+//starting portion of the code
+let content = getDateBetween("2020/01/01", "2021/01/01"); //helps us to get the date between the starting and the ending .
+document.getElementById("calendar").innerHTML = content;
+ //we are calling the html portion and wanting it to be displayed as the content of the page
