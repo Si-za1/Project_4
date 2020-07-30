@@ -101,6 +101,6 @@ function getDateBetween(date1,date2)
     return content;
 }
 //starting portion of the code
-let content = getDateBetween("2020/01/01", "2020/10/01"); //helps us to get the date between the starting and the ending .
+let content = getDateBetween("2020/01/01", "2020/11/01"); //helps us to get the date between the starting and the ending .
 document.getElementById("calendar").innerHTML = content;
  //we are calling the html portion and wanting it to be displayed as the content of the page

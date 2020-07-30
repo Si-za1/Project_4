@@ -219,7 +219,7 @@
         
         .title{
             font-weight: 600;
-            font-size: 1.5rem;
+            font-size: 3.5rem;
             margin-bottom: 1rem;
             padding-bottom: .5rem;
             position: relative;
@@ -258,7 +258,7 @@
         }
         .title1{
             font-weight: 600;
-            font-size: 1.5rem;
+            font-size: 3.5rem;
             margin-bottom: 1rem;
             padding-bottom: .5rem;
             position: relative;
@@ -330,7 +330,7 @@
     /*for the logos */
     .below{
         position: absolute;
-        top:90%;
+        top:95%;
         display: flex;
 
     }
@@ -342,11 +342,11 @@
         margin: 0px 2px;
     }
     .below ul li .fa{
-        font-size: 10px;
+        font-size: 50px;
       
     }
     .below ul li a{
-        position: relative;
+        position: inherit;
         border-width: thick;
         margin:2px;
         padding:6px;
