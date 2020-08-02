@@ -1,3 +1,4 @@
+
 function settingDate(date,day)
 {
     date = new Date(date);
@@ -35,7 +36,7 @@ function getDateBetween(date1,date2)
        
     }
     //console.log(dates);
-    let content="";
+    let content="<div class = 'calendarButns'><button id = 'calendarPrev'> Past </button> | <button id = 'calendarNext'> Future </button> </div>"; // Since we want the button at the top of our page
     let weekDays =[
                     {shortDay:'Mon' , fullDay:'Monday'},
                     {shortDay:'Tue' , fullDay:'Tuesday'},
@@ -57,7 +58,7 @@ function getDateBetween(date1,date2)
                         firstDate.getFullYear() +
                         "</h2>"     ;             //it helps us to get the format "Feb - 2020 "
             
-            content+= "<table>";
+            content+= "<table class ='calendarTable'>";
                 content+= "<thead >";
                 weekDays.map(item=>{
                     content += "<th>"+ item.fullDay+"</th>";
@@ -101,6 +102,6 @@ function getDateBetween(date1,date2)
     return content;
 }
 //starting portion of the code
-let content = getDateBetween("2020/01/01", "2020/11/01"); //helps us to get the date between the starting and the ending .
+let content = getDateBetween("2020/05/01", "2020/10/01"); //helps us to get the date between the starting and the ending .
 document.getElementById("calendar").innerHTML = content;
  //we are calling the html portion and wanting it to be displayed as the content of the page
