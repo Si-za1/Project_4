@@ -1,4 +1,4 @@
-
+let calendarShow =1;
 function settingDate(date,day)
 {
     date = new Date(date);
@@ -36,7 +36,7 @@ function getDateBetween(date1,date2)
        
     }
     //console.log(dates);
-    let content="<div class = 'calendarButns'><button id = 'calendarPrev'> Past </button> | <button id = 'calendarNext'> Future </button> </div>"; // Since we want the button at the top of our page
+    let content="<div class = 'calendarButns'><button id = 'calendarPrev'onclick='callPrev()' disabled > Past </button> | <button id = 'calendarNext'onclick='callNext()'> Future </button> </div>"; // Since we want the button at the top of our page
     let weekDays =[
                     {shortDay:'Mon' , fullDay:'Monday'},
                     {shortDay:'Tue' , fullDay:'Tuesday'},
@@ -50,7 +50,7 @@ function getDateBetween(date1,date2)
     for(let i=0; i<dates.length; i++){
         lastDate= dates[i]; //it returns the last date of the index
         firstDate= new Date(dates[i].getFullYear(),dates[i].getMonth(),1); // format 2020-01-01 returns the first date
-        content += "<div id='calendarTable_" + (i + 1) + "'>";
+        content += "<div id='calendarTable_" + (i + 1) + "' class='calendarDiv'>";
                 content +=
                         "<h2>" +
                         firstDate.toString().split(" ")[1] +
@@ -101,7 +101,45 @@ function getDateBetween(date1,date2)
     }
     return content;
 }
+    function callNext()   //for moving the calendar to the next month . since if we go front we need to come back so we have used the prev in the front 
+    {
+        let alltable=document.getElementsByClassName('calendarDiv');
+        document.getElementById('calendarPrev').disabled=false;
+        calendarShow++;
+        if(calendarShow<=alltable.length)
+        {
+            for(let i = 0; i<alltable.length;i++)
+        {
+            alltable[i].style.display="none";
+        }
+        document.getElementById('calendarTable_'+calendarShow).style.display="block";
+        if(calendarShow == alltable.length)
+        {
+            document.getElementById("calendarNext").disabled=true;
+        }
+       }
+    }
+    function callPrev()
+    {
+        let alltable=document.getElementsByClassName('calendarDiv'); // calling the class for displaying the content 
+        document.getElementById('calendarNext').disabled=false;
+        calendarShow --;
+        if(calendarShow >= 1)
+        {
+            for(let i = 0; i< alltable.length; i++)
+        {
+            alltable[i].style.display="none";
+        }
+        document.getElementById('calendarTable_'+calendarShow).style.display="block";
+        if(calendarShow == 1)
+        {
+            document.getElementById("calendarPrev").disabled=true;
+        }
+        
+        }
+    }
+
 //starting portion of the code
-let content = getDateBetween("2020/05/01", "2020/10/01"); //helps us to get the date between the starting and the ending .
+let content = getDateBetween("2020/01/01", "2020/10/01"); //helps us to get the date between the starting and the ending .
 document.getElementById("calendar").innerHTML = content;
  //we are calling the html portion and wanting it to be displayed as the content of the page
