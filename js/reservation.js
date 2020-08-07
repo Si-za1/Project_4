@@ -36,7 +36,7 @@ function getDateBetween(date1,date2)
        
     }
     //console.log(dates);
-    let content="<div class = 'calendarButns'><button id = 'calendarPrev'onclick='callPrev()' disabled > Past </button> | <button id = 'calendarNext'onclick='callNext()'> Future </button> </div>"; // Since we want the button at the top of our page
+    let content="<div class = 'calendarButns'><button id = 'calendarPrev'onclick='callPrev()' disabled > Past </button>  <button id = 'calendarNext'onclick='callNext()'> Future </button> </div>"; // Since we want the button at the top of our page
     let weekDays =[
                     {shortDay:'Mon' , fullDay:'Monday'},
                     {shortDay:'Tue' , fullDay:'Tuesday'},

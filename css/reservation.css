@@ -1,5 +1,5 @@
 :root{
-    --primary-color:rgba(157, 195, 248, 0.401);
+    --primary-color:rgba(157, 195, 248, 0.3);
     --overlay-color:rgba(24,59,51,0.85);   /*creating the variables to be used in the further styling areas.*/
     --menu-speed: 0.60s;
     --button-color: rgba(25, 25, 25, 0.91);
@@ -32,7 +32,7 @@ body{
 
 .showcase:before{
     content: '';                      /* for this property to run :before, we must keep the content as used '' */
-    background: url(../images/sit.webp) no-repeat center center/cover;
+    background: url(../images/siiiit.jpg) no-repeat center center/cover;
     position:absolute;
     top:0;
     left:0;
@@ -52,12 +52,13 @@ body{
 }
 
 .showcase h1{
-    font-size: 22 px;                                 /*1 rem = 16 px */
+    font-size: 50 px;                                 /*1 rem = 16 px */
 }
 
 .showcase p{
     font-size: 100 px;
-    font-weight: 900 bold;
+    font-family: 'Yantramanav', sans-serif;
+    color:#010e16;
 }
 .navbar{
     background: linear-gradient(#e1cccc, transparent);
@@ -503,4 +504,27 @@ input{
     transition: color 0.4s ease;
   }
   
+  .select{
+      display:flex;
+      flex-direction: column;
+      position: absolute;
+      left:70%;
+      top:120%;
+      transform: translate(10px,-20px);
+      padding:30px;
+      font-size: 30px;
+      font-family: 'Cookie', cursive;
+  }
+  option{
+      font-size: 20px;
+      font-family: 'Cookie', cursive;
+  }
+  .for{
+      font-size: 40px;
+      position: absolute;
+      left:52%;
+      top:120%;
+      font-family: 'Cookie', cursive;
+  }
+
   
