@@ -2,15 +2,22 @@
 <html lang="en">
 <head>
     <script src="../js/reservation.js" async=""></script>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Old+Standard+TT&family=Rokkitt:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@200&display=swap" rel="stylesheet">
+    <link href="../css/reservation.css" rel="stylesheet">
     <style>
         #calender{
             width:80%;
             margin-left:10% ;
             margin-top: 60px;
+            text-align: center;
         }
         .calendarTable{
-            width: 100%;
+            width: 50%;
             border: 1px solid black;
+            text-align: center;
         }
         .calendarTable thead tr th{
             background: black;
@@ -18,12 +25,14 @@
             border-bottom:4px black;
             padding: 2 rem;
             margin-bottom: 20px;
+           
         }
         .calendarTable tr td{
             text-align: center;
             padding: 22px 0px;
             border: 1px dashed black;
             background: rgba(206, 194, 194, 0.5);
+         
         }
         .calendarButns{
            padding: 12px 10px;
@@ -50,8 +59,42 @@
     </style>
 </head>
 <body>
-    <div id="calendar">
-        
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggler">  <!--Toggle only works with the checkbox so -->
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+            <div>
+                <div>
+                    <ul>
+                        <li> <a href= "index.html">  Home </a></li>
+                        <li> <a href= "menu.html"> Menu  </a></li>
+                        <li> <a href= "reservation.html"> Reservations </a></li>
+                        <li> <a href= "reservation.html"> Events  </a></li>
+                        <li> <a href= "contact.html"> Contact </a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
+    <header class="showcase">
+        <div class="navbar">
+        <a href="#" class="ty" id="button"> LogIn </a>
+        <a href="#" class="ty" id="button1"> SignUp</a>
+        <a href="reservation.html" class="ty"> Reservations </a>
+        </div>   
+        <div class =" container showcase-inner">
+           <h1>   Reservations and Events </h1>
+            <p>
+                We bring you an opportunity to enjoy the essence of an interactive website. You can check the date from the calendar,
+                enjoy the facility of choosing the table according to the number of the people and book your date and time from the
+                calendar. 
+                Here, we allow you to use the customaizable theme that you can use for the special occassion
+                to make your special one more special and make those moments special.    
+           </p>
+           <a href="#" class="butn"> Scroll Down </a>
+        </div>
+    </header>
+        <div id="calendar"></div>
+
 </body>
 </html>

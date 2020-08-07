@@ -1,3 +1,4 @@
+
 const translate = document.querySelectorAll(".translate");
 const big_title = document.querySelector(".big-title");
 const header = document.querySelector("header");
@@ -33,4 +34,34 @@ window.addEventListener('scroll', () => {
     border.style.width = `${scroll / (sectionY.top + section_height) * 30}%`;
 })
 
+document.getElementById("button").addEventListener("click",
+function(){
+    document.querySelector(".popup").style.display ="flex";
+})
 
+document.getElementById("button1").addEventListener("click",
+function(){
+    document.querySelector(".popup1").style.display ="flex";
+})
+
+document.querySelector(".empty").addEventListener("click",
+function(){
+    document.querySelector(".popup").style.display ="none";
+})
+
+document.querySelector(".emptys").addEventListener("click",
+function(){
+    document.querySelector(".popup1").style.display ="none";
+})
+
+
+function Appear(){
+   var message= document.getElementById("button3");
+   window.alert("You Must Login First!");
+}
+
+function Wel()
+{
+    var We= document.getElementById("WEL");
+    window.alert("Congratulations! Welcoming you to the Home Site!");
+}

@@ -78,9 +78,9 @@
     }
 
     .popup-rep{
-        height:200px;
-        width:200px;
-        background:#fff;
+        height:180px;
+        width:300px;
+        background:rgba(226, 209, 209, 0.91);
         padding:20px;
         border-radius:2px;
         position: relative;
@@ -102,9 +102,9 @@
 
     }
     .popup1-rep{
-        height:200px;
-        width:200px;
-        background:#fff;
+        height:150px;
+        width:300px;
+        background:rgba(226, 209, 209, 0.91);
         padding:10px;
         border-radius:2px;
         position: relative;
@@ -146,12 +146,12 @@
         .ty{
             /*position: fixed; */
             background-color:var( --button-color);
-            float: right;
+            float:right;
             color:#fff;
             font-family: 'Old Standard TT', serif;
             padding: 0.05rem 0.21rem ;
-            margin-top:1 rem;
-            margin-right:0.1rem;
+            margin-top: 3 rem;
+            margin-right: 5 rem; 
             z-index:1rem;
             box-shadow: 1px 1px 1px 1px dimgray,
                         2px 1px 2px 2px  lightgray,
