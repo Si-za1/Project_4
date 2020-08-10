@@ -97,11 +97,92 @@
         <h1 class="for">Select the Table For:</h1>
         <select class="select">
         <option value="Select the Table for:"> Select from here </option>
-        <option value="Table for 2"> Table For 2 </option>
+       <option value="Table for 2">Table For 2 </option>
         <option value="Table for 4"> Table For 4 </option>
         <option value="Table for 6"> Table For 6 </option>
         </select>  
     </header>
+    <h1>Reservations</h1>
     <div id="calendar"></div>
+
+    <h1>Events </h1>
+    <ul>
+        <li>Birthday   <!--Parent item -->
+            <ul>
+                <li>Gold </li>       <!--CHild Item-->
+                <li>Silver </li>
+                <li> Platinum </li>
+             </ul>
+        </li>
+    </ul>
+    <br>
+    <ul>
+        <li>Date
+            <ul>
+                <li>Gold </li>
+                <li>Silver </li>
+                <li> Platinum </li>
+            </ul>
+        </li>
+    </ul>
+    <br>
+    <ul>
+        <li>Anniversary
+            <ul>
+                <li>Gold </li>
+                <li>Silver </li>
+                <li> Platinum </li>
+            </ul>
+        </li>
+    </ul>
+
+<!--Menu Button -->
+<div class="menu_btn">
+    <h1> Menu </h1>
+    <a href="menu.html">Pre-order </a>
+</div>
+
+
+<!--Payment Section-->
+<div class="payment" id="payment">
+    <h1> Payment </h1>
+    <form id="one" action ="/" method="GET">
+        <h1> Pay with e-sewa </h1>
+        <label name ="name">Email</label>
+        <input type="email" id="Name" name="name" placeholder="some@example.com" required/>
+        <label name ="card_Number"> Card Number </label>
+        <input type="password" id="Card_Number" name="card_Number"placeholder="**********"/>
+        <br>
+        <label name="sure">Are you sure?</label>
+        <input type="checkbox" name="sure"> 
+        <br>
+        <label name="sure">Credit Card </label>
+        <input type="radio" name="sure"> 
+        <label name="sure">Debit Card </label>
+        <input type="radio" name="sure"> 
+        <br>
+        <button> Click Me </button>
+        <button> Cancel </button>
+    </form>
+
+    <form id="two" action ="/" method="GET">
+        <h1> Pay with Khalti </h1>
+        <label name ="name">Email</label>
+        <input type="email" id="Name" name="name" placeholder="some@example.com" required/>
+        <label name ="card_Number"> Card Number </label>
+        <input type="password" id="Card_Number" name="card_Number"placeholder="**********"/>
+        <br>
+        <label name="sure">Are you sure?</label>
+        <input type="checkbox" name="sure"> 
+        <br>
+        <label name="sure">Credit Card </label>
+        <input type="radio" name="sure"> 
+        <label name="sure">Debit Card </label>
+        <input type="radio" name="sure"> 
+        <br>
+        <button> Click Me </button>
+        <button> Cancel </button>
+    </form>
+</div>
 </body>
 </html>
