@@ -32,7 +32,7 @@ body{
 
 .showcase:before{
     content: '';                      /* for this property to run :before, we must keep the content as used '' */
-    background: url(../images/siiiit.jpg) no-repeat center center/cover;
+    background: url(../images/int.jpg) no-repeat center center/cover;
     position:absolute;
     top:0;
     left:0;
@@ -65,86 +65,6 @@ body{
     position:fixed;
     right:0;
 }
-   /*for the popup box*/
-
-   .popup{
-    background:rgba(0,0,0,0.6);
-    width:100%;
-    height:100%;
-    position:absolute;
-    top:0;
-    display:none;
-    justify-content:center;
-    align-items:center;
-
-}
-
-.popup-rep{
-    height:200px;
-    width:200px;
-    background:#fff;
-    padding:20px;
-    border-radius:2px;
-    position: relative;
-}
-.popup-rep h1{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
-}
-
-.popup1{
-    background:rgba(0,0,0,0.6);
-    width:110%;
-    height:110%;
-    position:absolute;
-    top:0;
-    display:none;
-    justify-content:center;
-    align-items:center;
-
-}
-.popup1-rep{
-    height:200px;
-    width:200px;
-    background:#fff;
-    padding:10px;
-    border-radius:2px;
-    position: relative;
-    top:2px;
-}
-.popup1-rep h2{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color:black;
-}
-
-input{
-    margin:12px auto;
-    padding:4px;
-}
-
-.empty{
-    position: absolute;
-    top:-15px;
-    right:-15px;
-    background: #fff;
-    height:20px;
-    width:20px;
-    border-radius: 50%;
-    box-shadow: 6px 6px 6px -4px rgba(0, 0, 0, 0.65);
-    cursor:pointer;
-}
-.emptys{
-    position: absolute;
-    top:-15px;
-    right:-15px;
-    background: #fff;
-    height:20px;
-    width:20px;
-    border-radius: 50%;
-    box-shadow: 6px 6px 6px -4px rgba(0, 0, 0, 0.65);
-    cursor:pointer;
-}
-
     .ty{
         /*position: fixed; */
         background-color:var( --button-color);
@@ -186,148 +106,7 @@ input{
         cursor: pointer;
     }
 
-    /*menu and reservation*/
-    section{
-        width: 100%;
-        background:url("../images/bg2.jpg");
-        position: relative;
-    }
     
-    section .container1{
-        padding: 3rem;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
-    }
-    
-    section img{
-        width: 100%;
-    }
-    
-    section .container1 > *{
-        margin: 2rem;
-    }
-    
-    .content{
-        color: rgb(15, 14, 14);
-        transform: translateY(-50px);
-    }
-    
-    .imgContainer{
-        transform: translateX(50px);
-    }
-    
-    .title{
-        font-weight: 600;
-        font-size: 3.5rem;
-        margin-bottom: 1rem;
-        padding-bottom: .5rem;
-        position: relative;
-    }
-    
-    .border{
-        position: absolute;
-        width: 0%;
-        height: 3px;
-        background-color: #fff;
-        bottom: 0;
-        left: 0;
-    }
-    
-    .shadow{
-        position: absolute;
-        bottom: 100%;
-        height: 300px;
-        width: 100%;
-        left: 0;
-        z-index: 10;
-        background: linear-gradient(to top-right, #e1cccc, transparent);
-    }
-    
-    .opacity{
-        opacity: 0;
-    }
-    .shadow1{
-        position: absolute;
-        bottom: 100%;
-        height: 300px;
-        width: 100%;
-        left: 0;
-        z-index: 10;
-        background: linear-gradient(to top-right, lightgrey, transparent);
-    }
-    .title1{
-        font-weight: 600;
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-        padding-bottom: .5rem;
-        position: relative;
-        left:700px;
-    }
-    .text1{
-        position: relative;
-        left:700px;
-    }
-    .imgContainer1{
-        transform: translateX(-760px);
-    }
-    
-    .by{
-        background-color:var( --button-color);
-        position: relative;
-        left:70rem;
-        color:#fff;
-        font-family: 'Old Standard TT', serif;
-        padding: 0.05rem 0.21rem ;
-        margin-top:1 rem;
-        margin-right:0.1rem;
-        z-index:1rem;
-        box-shadow: 1px 1px 1px 1px dimgray,
-                    2px 1px 2px 2px  lightgray,
-                    2px 1px 2px 2px  lightgray,
-                    1px 1px 1px 1px dimgray;
-        text-decoration:none;
-        transition: opacity 0.6s;
-    }
-    .by:hover{
-        opacity:0.8;
-    }
-
-    @media (max-width: 850px){
-        
-        section .container{
-            grid-template-columns: 1fr;
-        }
-        section .container1{
-            grid-template-columns: 1fr;
-        }
-    }
-    
-    @media(max-width: 600px){
-        .big-title{
-            font-size: 3rem
-        }
-    
-        .text{
-            font-size: .8rem;
-            float:left;
-        }
-    
-        .title{
-            font-size: 1.2rem;
-        }
-        
-        .text1{
-            font-size: .8rem;
-        
-        }
-        .title1{
-            font-size: 1.2rem;
-        }
-    }
-
 
 /*for the logos */
 .below{
@@ -526,5 +305,47 @@ input{
       top:120%;
       font-family: 'Cookie', cursive;
   }
+  .payment{
+    display:flex;
+    margin: 12px;
+    padding-bottom: 10%;
+  }
 
+.wrap-2{
+  margin-top: 20px;
+  padding:22px;
+  display: flex;
+  flex-direction: column;
   
+ 
+}
+.wrap-1{
+  padding:22px;
+  margin: 20px;
+  display: inline-flex;
+  flex-direction: column;
+  column-gap:5px;
+ 
+ 
+}
+
+
+  .form_1
+  {
+    position: relative;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    margin:2px;
+    display: block;
+    background:burlywood;
+  }
+ .form_1 img{
+   position: absolute;
+   left:85%;
+   bottom:75%;
+   border-radius:50%;
+   width:60px;
+   border:2px;
+ }
+
