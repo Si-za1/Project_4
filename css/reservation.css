@@ -305,6 +305,8 @@ body{
       top:120%;
       font-family: 'Cookie', cursive;
   }
+
+  /*payment*/
   .payment{
     display:flex;
     margin: 12px;

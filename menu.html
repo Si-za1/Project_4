@@ -10,230 +10,66 @@
     
 </head>
 <body >
-<!--navigation bar for reservation button-->
-<!--menu-->
-<header class="header">
-<nav>
-  <div class="logo">
-    <a href="home.html"><h4>Reserve N' Dine</h4></a>
-  </div>
-    <ul class="navbar">
-      <li><a href="reservation.html">Reservation</a></li>
-    
-    </ul>
-</nav>
+  <!--For the Welcome to the site -->
+  <div class="menu-wrap">
+    <input type="checkbox" class="toggler">  <!--Toggle only works with the checkbox so -->
+    <div class="hamburger"><div></div></div>
     <div class="menu">
-        <h1 class="title">MENU</h1>
+        <div>
+            <div>
+                <ul>
+                    <li> <a href= "index.html">  Home </a></li>
+                    <li> <a href= "menu.html"> Menu  </a></li>
+                    <li> <a href= "reservation.html"> Reservations </a></li>
+                    <li> <a href= "reservation.html"> Events  </a></li>
+                    <li> <a href= "contact.html"> Contact </a> </li>
+                </ul>
+            </div>
+        </div>
     </div>
-
-    <div class="menu_button">
-        <a href="#appetizer" class="menu-button pulsate" onclick="openTab('a1')" > Appetizer</a>
-        <a href="#main" class="menu-button pulsate" onclick="openTab('b1')">Main</a>
-        <a href="#colddrinks" class="menu-button pulsate" onclick="openTab('c1')">Cold Drinks</a>
-        <a href="#deserts" class="menu-button pulsate" onclick="openTab('d1')">Deserts</a>
-    </div>
+</div>
+ <!-- For the hamburger menu -->
+ <header class="showcase">
+  <div class="navbar">
+  <button onclick="Wel()" class="ty" id="WEL"> LoggedIn </button>
+  <a href="reservation.html" class="ty"> Reservations </a>
+  </div>   
+  <div class =" container showcase-inner">
+     <h1>  MENU  </h1>
+      <p>
+          We bring you an opportunity to enjoy the essence of an interactive website.
+          Here, we let you all enjoy the moment to get in touch with all the amazing feature that will serve
+          you the best. Here, we allow you to use the customaizable theme that you can use for the special occassion
+          to make your special one more special and make those moments special.    
+     </p>
+     <ul>
+     <li> <a href="#" class="butn"> FOR YOU! </a></li>
+      <ul class="hoverOn">
+          <li><a href="#starter" class="butn"> Starter </a> </li>
+          <li><a href="#appetizer" class="butn"> Appetizer </a></li>
+          <li><a href="#drink" class="butn"> Drinks </a> </li>
+          <li><a href="#dessert" class="butn"> Dessert </a></li>
+      </ul>
+    </ul>
+  </div>
 </header>
-<!--menu options button--> 
-<!--appetizer menu-->
-<section>
-<a name="appetizer">
-<div  id="a1" class="container" style="display: none;">
-  <i class="fa fa-times" aria-hidden="true"></i>
-    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-    <div class="card1" >
-        <img src="/images/mushroom_choila.jpg" alt="mushroom choila" class="card_image">
-    
-        <div class="card_content">
-        <h2>Mushroom Choila</h2>
-         </div>
-         <div class="description">
-           Rs.200  
-         </div>
-        <div class="order">
-        <a href="#" class="ordernow">ORDER NOW</a>
-        </div>
+<div class="container">
+  <div class="Starter">
+    <a name="starter">Starter</a>
+    <div clas="cards">
     </div>
-
-   <div class="card2" >
-        <img src="/images/chickhen_choila.jpg" alt="chickhen_choila" class="card_image">
-    
-        <div class="card_content">
-        <h2>Chickhen Choila</h2>
-         </div>
-         <div class="description">
-            Rs.200  
-          </div>
-        <div class="order">
-        <a href="#" class="ordernow">ORDER NOW</a>
-        </div>
-    </div>
-    <div class="card3" >
-        <img src="/images/sadeko chickhen.jpg" alt="sadeko chickhen"  class="card_image">
-    
-        <div class="card_content">
-        <h2>Chickhen sadeko</h2>
-         </div>
-         <div class="description">
-            Rs.200  
-          </div>
-        <div class="order">
-        <a href="#" class="ordernow">ORDER NOW</a>
-        </div>
-    </div>
+  </div>
+  <div class="Appetizer">
+    <a name="appetizer">Appetizer</a>
+  </div>
+  <div class="Drink">
+    <a name="drink">Drink</a>
+  </div>
+  <div class="Dessert">
+    <a name="dessert">Dessert</a>
+  </div>
 </div>
-</a>
-<!--end appetizer-->
 
-<!--main menu-->
-<a name="main">
-<div id="b1" class="container"  style="display:none">
-   
-    <div class="card1" >
-        <img src="/images/momo.jpg" alt="momo" class="card_image">
-        <div class="card_content">
-        <h2>Momo</h2>
-         </div>
-         <div class="description">
-           Rs.200  
-         </div>
-        <div class="order">
-        <a href="#" class="ordernow">ORDER NOW</a>
-        </div>
-    </div>
-
-   <div class="card2" >
-        <img src="/images/nan roti.jpg" alt="nan" class="card_image">
-    
-        <div class="card_content">
-        <h2>Nan</h2>
-         </div>
-         <div class="description">
-            Rs.200  
-          </div>
-        <div class="order">
-        <a href="#" class="ordernow">ORDER NOW</a>
-        </div>
-    </div>
-    <div class="card3" >
-        <img src="/images/jomson aalu.jpg" alt="aalu"  class="card_image">
-    
-        <div class="card_content">
-        <h2>jomson aalu</h2>
-         </div>
-         <div class="description">
-            Rs.200  
-          </div>
-        <div class="order">
-        <a href="#" class="ordernow">ORDER NOW</a>
-        </div>
-    </div>
-</div>
-</a>
-<!--end of main menu-->
-
-<!--cold drinks-->
-<a name="colddrinks">
-<div id="c1" class="container"  style="display:none">
-        <div class="card1" >
-        <img src="/images/aila.jpg" alt="aila" class="card_image">
-        <div class="card_content">
-        <h2>Aila</h2>
-         </div>
-         <div class="description">
-           Rs.200  
-         </div>
-        <div class="order">
-        <a href="#" class="ordernow">ORDER NOW</a>
-        </div>
-    </div>
-
-   <div class="card2" >
-        <img src="/images/matka chiya.jpg" alt="chiya" class="card_image">
-    
-        <div class="card_content">
-        <h2> Matka Chiya </h2>
-         </div>
-         <div class="description">
-            Rs.200  
-          </div>
-        <div class="order">
-        <a href="#" class="ordernow">ORDER NOW</a>
-        </div>
-    </div>
-    <div class="card3" >
-        <img src="/images/cardamom lassi.jpg" alt="lassi"  class="card_image">
-    
-        <div class="card_content">
-        <h2>Cardamon Lass</h2>
-         </div>
-         <div class="description">
-            Rs.200  
-          </div>
-        <div class="order">
-        <a href="#" class="ordernow">ORDER NOW</a>
-        </div>
-    </div>
-</div>
-</a>
-<!--end colddrinks menu-->
-
-<!--deserts-->
-<a name="deserts">
-<div id="d1" class="container"  style="display:none">
-    
-    <div class="card1" >
-        <img src="/images/yomari.jpg" alt="yomari" class="card_image">
-        <div class="card_content">
-        <h2>Yomari</h2>
-         </div>
-         <div class="description">
-           Rs.200  
-         </div>
-        <div class="order">
-        <a href="#" class="ordernow">ORDER NOW</a>
-        </div>
-    </div>
-
-   <div class="card2" >
-        <img src="/images/kheer.jpg" alt="kheer" class="card_image">
-    
-        <div class="card_content">
-        <h2>Kheer</h2>
-         </div>
-         <div class="description">
-            Rs.200  
-          </div>
-        <div class="order">
-        <a href="#" class="ordernow">ORDER NOW</a>
-        </div>
-    </div>
-    <div class="card3" >
-        <img src="/images/sikarni.jpg" alt="sikarni"  class="card_image">
-    
-        <div class="card_content">
-        <h2>Sikarni</h2>
-         </div>
-         <div class="description">
-            Rs.200  
-          </div>
-        <div class="order">
-        <a href="#" class="ordernow">ORDER NOW</a>
-        </div>
-    </div>
-</div>
-</a>
-<!--end for desertss-->
-<script>
-  function openTab(tabName) {
-    var i, x;
-    x = document.getElementsByClassName("container");
-      for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";
-       }
-    document.getElementById(tabName).style.display = "block";
-}
-</script> 
-</section>   
 
 <!--footer for app integration-->
 <section id="social_icons">
@@ -243,6 +79,5 @@
 </section>
 </body>
 </html>
-  <a href="index.html"> Go back! </a>  
 </body>
 </html>
