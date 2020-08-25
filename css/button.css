@@ -355,7 +355,108 @@ input{
     transition: color 0.4s ease;
   }
   
-  
+ /* for the cards menu */
+ .container{
+  display:flex;
+  justify-content: center;
+  max-width:80%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px paleturquoise ;
+}
+
+.card1, .card2, .card3{
+
+background-color: rgb(192, 248, 250);
+float: left;
+max-width: 25%;
+padding: 20px;
+text-align: center;
+color: black; 
+margin-right: 20px;
+margin-top: 20px;
+margin-left: 40px;
+margin-bottom: 20px;
+
+}
+
+#a1::after{
+ content: "";
+display: table;
+clear: both;
+}
+#b1::after{
+  content: "";
+ display: table;
+ clear: both;
+}
+#c1::after{
+  content: "";
+ display: table;
+ clear: both;
+}
+#d1::after{
+  content: "";
+ display: table;
+ clear: both;
+}
+ 
+.card_image{
+  width: 100%
+}
+.card_content{
+   text-align: center;
+   padding: 5px;
+ 
+}
+.description{
+  text-align: center;
+  padding: 5px;
+}
+.order{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #fff;
+  cursor: pointer;
+ 
+}
+.start{
+  Font-size:30px;
+  color: #e1306c;
+}
+input{
+  padding:10px;
+  margin:12px;
+}
+#add{
+  padding:10px;
+  margin:12px;
+  background:black;
+  color:white;
+}
+#sub{
+  padding:10px;
+  margin:12px;
+  background:black;
+  color:white;
+}
+.ordernow{
+
+  background: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: #fff;
+  padding: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.ordernow:hover{
+  transition: 0.5s;
+  background:white;
+  color:black;
+  border:none;
+}
+
 #social_icons{
       height: 150px;
       background: #fff;

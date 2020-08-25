@@ -45,8 +45,12 @@
      <ul>
      <li> <a href="#" class="butn"> FOR YOU! </a></li>
       <ul class="hoverOn">
-          <li><a href="#starter" class="butn"> Starter </a> </li>
-          <li><a href="#appetizer" class="butn"> Appetizer </a></li>
+          <li><a href="#starter" class="butn"> Appetizer</a>
+          <!--<ol>
+            <a href="#" class="butn"> Mushroom</a>
+          </ol>-->
+          </li>
+          <li><a href="#appetizer" class="butn"> Main Course </a></li>  <!-- IDEA : adding the menu inside it as nested-->
           <li><a href="#drink" class="butn"> Drinks </a> </li>
           <li><a href="#dessert" class="butn"> Dessert </a></li>
       </ul>
@@ -54,20 +58,69 @@
   </div>
 </header>
 <div class="container">
-  <div class="Starter">
-    <a name="starter">Starter</a>
-    <div clas="cards">
+  
+  <a name="starter" class="start"> Appetizer</a>
+      <div class="card1" >
+          <img src="/images/chickenchoi.jpg" alt="chicken-choila" class="card_image">
+      
+          <div class="card_content">
+            <h2>Chicken Choila</h2>
+          </div>
+          <div class="description">
+            Rs.200  
+          </div>
+          <button id="add">+</button>
+          <input type="number" placeholder="quantity">
+          <button id="sub">-</button>
+          <div class="order">
+            <a href="#" class="ordernow">ORDER NOW</a>
+          </div>  
+      </div>
+      
+        <div class="card2" >
+            <img src="/images/musch.jpg" alt="mushroom-choila" class="card_image">
+          
+              <div class="card_content">
+                <h2>Mushroom Choila</h2>
+              </div>
+              <div class="description">
+                Rs.200  
+              </div>
+              <button id="add">+</button>
+              <input type="number" placeholder="quantity">
+              <button id="sub">-</button>
+              <div class="order">
+                <a href="#" class="ordernow">ORDER NOW</a>
+              </div>
+        </div>
+
+        <div class="card3" >
+          <img src="/images/panchi.jpg" alt="paneer-choila" class="card_image">
+        
+            <div class="card_content">
+              <h2>Paneer Chilli </h2>
+            </div>
+            <div class="description">
+              Rs.200  
+            </div>
+            <button id="add">+</button>
+            <input type="number" placeholder="quantity">
+            <button id="sub">-</button>
+            <div class="order">
+              <a href="#" class="ordernow">ORDER NOW</a>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="Appetizer">
-    <a name="appetizer">Appetizer</a>
-  </div>
-  <div class="Drink">
-    <a name="drink">Drink</a>
-  </div>
-  <div class="Dessert">
-    <a name="dessert">Dessert</a>
-  </div>
+           
+      <div class="Appetizer">
+        <a name="appetizer">Appetizer</a>
+      </div>
+      <div class="Drink">
+        <a name="drink">Drink</a>
+      </div>
+      <div class="Dessert">
+        <a name="dessert">Dessert</a>
+      </div>
 </div>
 
 
