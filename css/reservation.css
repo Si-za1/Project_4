@@ -312,16 +312,189 @@ body{
     margin: 12px;
     padding-bottom: 10%;
   }
+  .mypara{
+    font-size:30px;
+    color:rosybrown;
+  }
 
+  .loginbox{
+    width: 320px;
+    height: 440px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    top:235%;
+    left:20%;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginbox input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.loginbox input[type="submit"], input[type="reser"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.loginbox input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+.loginbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+
+.loginbox a:hover
+{
+    color: #ffc107;
+}
+
+
+
+.loginbox1{
+  width: 320px;
+  height: 440px;
+  background: rgb(10, 10, 10);
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  top:235%;
+  left:40%;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+}
+
+.avatar{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+
+h1{
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.loginbox1 p{
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.loginbox1 input{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.loginbox1 input[type="text"], input[type="password"]
+{
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+.loginbox1 input[type="submit"], input[type="reset"]
+{
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #fb2525;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+.loginbox1 input[type="submit"]:hover
+{
+  cursor: pointer;
+  background: #ffc107;
+  color: #000;
+}
+.loginbox1 a{
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgrey;
+}
+
+.loginbox1 a:hover
+{
+  color: #ffc107;
+}
+
+/*
 .wrap-2{
   margin-top: 20px;
   padding:22px;
   display: flex;
   flex-direction: column;
-  
+  position: absolute;
+  top:210%;
+   left:15%;
  
 }
+
 .wrap-1{
+  position: absolute;
+  top:212%;
+   left:35%;
   padding:22px;
   margin: 20px;
   display: inline-flex;
@@ -329,6 +502,26 @@ body{
   column-gap:5px;
 }
 
+.form_1
+{
+  position: relative;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  margin:2px;
+  display: block;
+  
+}
+.form_1 img{
+ position: absolute;
+ left:65%;
+ bottom:65%;
+ border-radius:50%;
+ width:60px;
+ border:2px;
+}
+
+*/
 /* Dropdown Button */
 
 .titleof{
@@ -336,32 +529,11 @@ body{
   color:rosybrown;
   text-align:left;
 }
-
-.dropbtn {
-  background-color: black;
-  color: white;
-  padding: 13px;
-  font-size: 16px;
-  border: none;
-}
-.dropbtn2 {
-  background-color: black;
-  color: white;
-  padding: 13px;
-  font-size: 40 px;
-  border: none;
-}
-.dropbtn1 {
-  background-color: #121312;
-  color: white;
-  padding: 15px;
-  font-size: 16px;
-  border: none;
-}
-
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
-  position: relative;
+  position: absolute;
+  top:176%;
+  left:3%;
   display: flex;
   padding:22px;
   margin-left:23px;
@@ -375,7 +547,7 @@ body{
   padding:22px;
   position: absolute;
   top:176%;
-  left:10%;
+  left:12%;
   margin-left:23px;
   text-align: center;
   justify-items: center;
@@ -391,16 +563,41 @@ body{
   display: flex;
   position: absolute;
   top:176%;
-  left:18%;
+  left:19%;
   padding:22px;
   margin-left:23px;
 }
+
+
+.dropbtn {
+  background-color: black;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+.dropbtn2 {
+  background-color: black;
+  color: white;
+  padding: 16px;
+  font-size: 40 px;
+  border: none;
+}
+.dropbtn1 {
+  background-color: #121312;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #131212;
-  min-width: 120px;
+  min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -435,7 +632,7 @@ body{
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
-.dropdown-content:hover .onlyon {display: inline-flex; padding:12px;font-size:20px; text-align:right;}
+.dropdown-content:hover .onlyon {display: inline-flex; font-size:20px; text-align:right;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
@@ -489,23 +686,4 @@ body{
 
 
 
-
-.form_1
-  {
-    position: relative;
-    text-align: center;
-    justify-items: center;
-    align-items: center;
-    margin:2px;
-    display: block;
-    background:burlywood;
-  }
- .form_1 img{
-   position: absolute;
-   left:85%;
-   bottom:75%;
-   border-radius:50%;
-   width:60px;
-   border:2px;
- }
 
