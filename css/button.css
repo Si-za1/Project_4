@@ -445,7 +445,8 @@ input{
   background:black;
   color:white;
 }
-.ordernow{
+/*order now */
+#ordernow1{
 
   background: black;
   border: 1px solid black;
@@ -455,12 +456,196 @@ input{
   cursor: pointer;
   text-decoration: none;
 }
-.ordernow:hover{
+#ordernow1:hover{
   transition: 0.5s;
-  background:white;
+  background:green;
   color:black;
   border:none;
 }
+
+#ordernow2{
+
+  background: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: #fff;
+  padding: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+#ordernow2:hover{
+  transition: 0.5s;
+  background:green;
+  color:black;
+  border:none;
+}
+
+#ordernow3{
+
+  background: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: #fff;
+  padding: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+#ordernow3:hover{
+  transition: 0.5s;
+  background:green;
+  color:black;
+  border:none;
+}
+
+#ordernow4{
+
+  background: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: #fff;
+  padding: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+#ordernow4:hover{
+  transition: 0.5s;
+  background:green;
+  color:black;
+  border:none;
+}
+
+#ordernow5{
+
+  background: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: #fff;
+  padding: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+#ordernow5:hover{
+  transition: 0.5s;
+  background:green;
+  color:black;
+  border:none;
+}
+
+#ordernow6{
+
+  background: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: #fff;
+  padding: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+#ordernow6:hover{
+  transition: 0.5s;
+  background:green;
+  color:black;
+  border:none;
+}
+
+#ordernow7{
+
+  background: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: #fff;
+  padding: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+#ordernow7:hover{
+  transition: 0.5s;
+  background:green;
+  color:black;
+  border:none;
+}
+#ordernow8{
+
+  background: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: #fff;
+  padding: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+#ordernow8:hover{
+  transition: 0.5s;
+  background:green;
+  color:black;
+  border:none;
+}
+#ordernow9{
+
+  background: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: #fff;
+  padding: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+#ordernow9:hover{
+  transition: 0.5s;
+  background:green;
+  color:black;
+  border:none;
+}
+#ordernow10{
+
+  background: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: #fff;
+  padding: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+#ordernow10:hover{
+  transition: 0.5s;
+  background:green;
+  color:black;
+  border:none;
+}
+#ordernow11{
+
+  background: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: #fff;
+  padding: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+#ordernow11:hover{
+  transition: 0.5s;
+  background:green;
+  color:black;
+  border:none;
+}
+#ordernow12{
+
+  background: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: #fff;
+  padding: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+#ordernow12:hover{
+  transition: 0.5s;
+  background:green;
+  color:black;
+  border:none;
+}
+
+
 .maincourse{
   text-align:center;
   margin:12px;

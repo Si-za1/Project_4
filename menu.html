@@ -6,6 +6,7 @@
     <title>Menu</title>
     <link rel="stylesheet" href="../css/button.css">
     <script src="https://kit.fontawesome.com/ad6dddada5.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/98392c7a0e.js" crossorigin="anonymous"></script>
    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;700&display=swap" rel="stylesheet">
     
 </head>
@@ -32,6 +33,10 @@
  <header class="showcase">
   <div class="navbar">
   <button onclick="Wel()" class="ty" id="WEL"> LoggedIn </button>
+  <a href ="final.html" class="ty" id="WEL"> Cart 
+    <i class="fas fa-cart-plus"></i>
+  </button>
+
   <a href="reservation.html" class="ty"> Reservations </a>
   </div>   
   <div class =" container showcase-inner">
@@ -70,11 +75,10 @@
           <div class="description">
             Rs.290  
           </div>
-          <button id="add">+</button>
           <input type="number" placeholder="quantity">
-          <button id="sub">-</button>
           <div class="order">
-            <a href="#" class="ordernow">ORDER NOW</a>
+                <input type="button" value="Add to Cart" onclick="call1()" id="ordernow1">
+            <!--<a href="#" class="ordernow">Add to Cart </a>-->
           </div>  
       </div>
       
@@ -87,11 +91,9 @@
               <div class="description">
                 Rs.260  
               </div>
-              <button id="add">+</button>
               <input type="number" placeholder="quantity">
-              <button id="sub">-</button>
               <div class="order">
-                <a href="#" class="ordernow">ORDER NOW</a>
+                <input type="button" value="Add to Cart" onclick="call2()" id="ordernow2">
               </div>
         </div>
 
@@ -104,11 +106,9 @@
             <div class="description">
               Rs.280  
             </div>
-            <button id="add">+</button>
             <input type="number" placeholder="quantity">
-            <button id="sub">-</button>
             <div class="order">
-              <a href="#" class="ordernow">ORDER NOW</a>
+              <input type="button" value="Add to Cart" onclick="call3()" id="ordernow3">
             </div>
         </div>
     </div>
@@ -127,11 +127,11 @@
             <div class="description">
               Rs.180  
             </div>
-            <button id="add">+</button>
+            
             <input type="number" placeholder="quantity">
-            <button id="sub">-</button>
+            
             <div class="order">
-              <a href="#" class="ordernow">ORDER NOW</a>
+              <input type="button" value="Add to Cart" onclick="call4()" id="ordernow4">
             </div>  
         </div>
         
@@ -144,11 +144,11 @@
                 <div class="description">
                   Rs.160  
                 </div>
-                <button id="add">+</button>
+                
                 <input type="number" placeholder="quantity">
-                <button id="sub">-</button>
+                
                 <div class="order">
-                  <a href="#" class="ordernow">ORDER NOW</a>
+                  <input type="button" value="Add to Cart" onclick="call5()" id="ordernow5">
                 </div>
           </div>
   
@@ -161,11 +161,11 @@
               <div class="description">
                 Rs.300  
               </div>
-              <button id="add">+</button>
+             
               <input type="number" placeholder="quantity">
-              <button id="sub">-</button>
+           
               <div class="order">
-                <a href="#" class="ordernow">ORDER NOW</a>
+                <input type="button" value="Add to Cart" onclick="call6()" id="ordernow6">
               </div>
           </div>
       </div>
@@ -183,11 +183,11 @@
             <div class="description">
               Rs.120  
             </div>
-            <button id="add">+</button>
+           
             <input type="number" placeholder="quantity">
-            <button id="sub">-</button>
+            
             <div class="order">
-              <a href="#" class="ordernow">ORDER NOW</a>
+              <input type="button" value="Add to Cart" onclick="call7()" id="ordernow7">
             </div>  
         </div>
         
@@ -200,11 +200,12 @@
                 <div class="description">
                   Rs.100 
                 </div>
-                <button id="add">+</button>
+               
                 <input type="number" placeholder="quantity">
-                <button id="sub">-</button>
+               
                 <div class="order">
-                  <a href="#" class="ordernow">ORDER NOW</a>
+                <input type="button" value="Add to Cart" onclick="call8()" id="ordernow8">
+                 
                 </div>
           </div>
   
@@ -217,11 +218,11 @@
               <div class="description">
                 Rs.60 
               </div>
-              <button id="add">+</button>
+             
               <input type="number" placeholder="quantity">
-              <button id="sub">-</button>
+             
               <div class="order">
-                <a href="#" class="ordernow">ORDER NOW</a>
+                <input type="button" value="Add to Cart" onclick="call9()" id="ordernow9">
               </div>
           </div>
       </div>
@@ -241,11 +242,11 @@
             <div class="description">
               Rs.160  
             </div>
-            <button id="add">+</button>
+            
             <input type="number" placeholder="quantity">
-            <button id="sub">-</button>
+           
             <div class="order">
-              <a href="#" class="ordernow">ORDER NOW</a>
+              <input type="button" value="Add to Cart" onclick="call10()" id="ordernow10">
             </div>  
         </div>
         
@@ -258,11 +259,11 @@
                 <div class="description">
                   Rs.100 
                 </div>
-                <button id="add">+</button>
+               
                 <input type="number" placeholder="quantity">
-                <button id="sub">-</button>
+               
                 <div class="order">
-                  <a href="#" class="ordernow">ORDER NOW</a>
+                  <input type="button" value="Add to Cart" onclick="call11()" id="ordernow11">
                 </div>
           </div>
   
@@ -275,11 +276,11 @@
               <div class="description">
                 Rs.200 
               </div>
-              <button id="add">+</button>
+             
               <input type="number" placeholder="quantity">
-              <button id="sub">-</button>
+              
               <div class="order">
-                <a href="#" class="ordernow">ORDER NOW</a>
+                <input type="button" value="Add to Cart" onclick="call12()" id="ordernow12">
               </div>
           </div>
       </div>
@@ -293,6 +294,8 @@
   <a href="#"><i class="fab fa-facebook facebook"></i></a>
   <a href="#"><i class="fab fa-instagram instagram"></i></a>
 </section>
+
+<script src="../js/menu.js"></script>
 </body>
 </html>
 </body>
