@@ -3,8 +3,8 @@ body{
     background-position: cover;
 }
   .loginbox{
-    width: 340px;
-    height: 500px;
+    width: 380px;
+    height: 600px;
     background:rgba(11,13,13,3.5);
     color: #fff;
     top: 50%;
@@ -44,7 +44,8 @@ h1{
     margin-bottom: 20px;
 }
 
-.loginbox input[type="name"], input[type="password"]
+.loginbox input[type="name"], input[type="password"], input[type="email"]
+
 {
     border: none;
     border-bottom: 1px solid #fff;
