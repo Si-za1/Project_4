@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ad6dddada5.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/98392c7a0e.js" crossorigin="anonymous"></script>
+    <link href="../css/event.css" rel="stylesheet">
+    <title>Events </title>
+</head>
+<body>
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggler">  <!--Toggle only works with the checkbox so -->
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+            <div>
+                <div>
+                    <ul>
+                        <li> <a href= "index.html">  Home </a></li>
+                        <li> <a href= "index.html"> Menu  </a></li>
+                        <li> <a href= "index.html"> Reservations </a></li>
+                        <li> <a href= "index.html"> Events  </a></li>
+                        <li> <a href= "index.html"> Contact </a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="showcase">
+        <div class="navbar">
+        <a href="#" class="ty" id="button"> Logged In </a>
+        <button class="ty" id = "button3"> Reservations </button>
+        <a href ="cart.html" class="ty" id="WEL"> Cart 
+            <i class="fas fa-cart-plus"></i>
+            </a>
+        </div>   
+        <div class =" container showcase-inner">
+            <h1>  EVENTS </h1>
+            <p>
+                We bring you an opportunity to enjoy the essence of an interactive website.
+                Here, we let you all enjoy the moment to get in touch with all the amazing feature that will serve
+                you the best. Here, we allow you to use the customaizable theme that you can use for the special occassion
+                to make your special one more special and make those moments special.    
+           </p>
+           <ul>
+           <li> <a href="#" class="butn"> Choose From </a></li>
+            <ul class="hoverOn">
+                <li><a href="#Birthday" class="butn"> Birthday </a>
+                <!--<ol>
+                  <a href="#" class="butn"> Mushroom</a>
+                </ol>-->
+                </li>
+                <li><a href="#Anni" class="butn"> Anniversary </a></li>  <!-- IDEA : adding the menu inside it as nested-->
+                <li><a href="#Date" class="butn"> Date </a> </li>
+            </ul>
+          </ul>
+        </div>
+    </header>
+    <div class="container">
+ 
+        <a name="Birthday" class="starter1"> Birthday </a>
+      
+          <div class="card1" >
+              <img src="/images/chickenchoi.jpg" alt="chicken-choila" class="card_image">
+          
+              <div class="card_content">
+                <h2> Gold </h2>
+              </div>
+              <div class="description">
+                Rs.1000 Extra  
+              </div>
+              
+              <div class="order">
+                    <input type="button" value="Add to Cart" onclick="call1()" id="ordernow1">
+                <!--<a href="#" class="ordernow">Add to Cart </a>-->
+              </div>  
+          </div>
+          
+            <div class="card2" >
+                <img src="/images/musch.jpg" alt="mushroom-choila" class="card_image">
+              
+                  <div class="card_content">
+                    <h2>Platinum</h2>
+                  </div>
+                  <div class="description">
+                    Rs.1200 Extra  
+                  </div>
+                  
+                  <div class="order">
+                    <input type="button" value="Add to Cart" onclick="call2()" id="ordernow2">
+                  </div>
+            </div>
+    
+            <div class="card3" >
+              <img src="/images/panchi.jpg" alt="paneer-choila" class="card_image">
+            
+                <div class="card_content">
+                  <h2> Silver </h2>
+                </div>
+                <div class="description">
+                  Rs.800 Extra
+                </div>
+              
+                <div class="order">
+                  <input type="button" value="Add to Cart" onclick="call3()" id="ordernow3">
+                </div>
+            </div>
+        </div>
+         
+    
+          <div class="maincourse">
+            <a name="Anni" class="maincourse1"> Anniversary  </a>
+            
+            <div id="b1" class="container">
+              <div class="card1" >
+                <p class="card_image"> 
+                 We will be providing Balloons, Fresh Flowers and all the decoration according to you!    
+                </p>
+            
+                <div class="card_content">
+                  <h2> Gold</h2>
+                </div>
+                <div class="description">
+                  Rs.1800 Extra
+                </div>
+                
+                
+                <div class="order">
+                  <input type="button" value="Add to Cart" onclick="call4()" id="ordernow4">
+                </div>  
+            </div>
+            
+              <div class="card2" >
+                  <img src="/images/nn.jpg" alt="mushroom-choila" class="card_image">
+                
+                    <div class="card_content">
+                      <h2>Platinum </h2>
+                    </div>
+                    <div class="description">
+                      Rs.2600  Extra
+                    </div>
+                    
+                    <div class="order">
+                      <input type="button" value="Add to Cart" onclick="call5()" id="ordernow5">
+                    </div>
+              </div>
+      
+              <div class="card3" >
+                <img src="/images/aalo.jpg" alt="paneer-choila" class="card_image">
+              
+                  <div class="card_content">
+                    <h2> Silver</h2>
+                  </div>
+                  <div class="description">
+                    Rs.1200 Extra
+                  </div>
+               
+                  <div class="order">
+                    <input type="button" value="Add to Cart" onclick="call6()" id="ordernow6">
+                  </div>
+              </div>
+          </div>
+          <div class="Drink">
+            
+            <a name="Date" class="drink1"> Date  </a>
+            
+            <div id="b1" class="container">
+              <div class="card1" >
+                <img src="/images/lasss.jpg" alt="Lassi" class="card_image">
+            
+                <div class="card_content">
+                  <h2> Gold </h2>
+                </div>
+                <div class="description">
+                  Rs.1200  Extra
+                </div>
+                
+                <div class="order">
+                  <input type="button" value="Add to Cart" onclick="call7()" id="ordernow7">
+                </div>  
+            </div>
+            
+              <div class="card2" >
+                  <img src="/images/aaaila.jpg" alt="aaila" class="card_image">
+                
+                    <div class="card_content">
+                      <h2> Platinum </h2>
+                    </div>
+                    <div class="description">
+                      Rs.1800 Extra
+                    </div>
+                   
+                 
+                   
+                    <div class="order">
+                    <input type="button" value="Add to Cart" onclick="call8()" id="ordernow8">
+                     
+                    </div>
+              </div>
+      
+              <div class="card3" >
+                <img src="/images/chiya.jpg" alt="paneer-choila" class="card_image">
+              
+                  <div class="card_content">
+                    <h2> Silver </h2>
+                  </div>
+                  <div class="description">
+                    Rs.600 Extra
+                  </div>
+                 
+                  <div class="order">
+                    <input type="button" value="Add to Cart" onclick="call9()" id="ordernow9">
+                  </div>
+              </div>
+          </div>
+          </div>
+    
+</body>
+</html>

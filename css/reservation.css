@@ -321,7 +321,7 @@ body{
     font-size:40px;
     color:rosybrown;
     position: absolute;
-    top:213%;
+    top:192%;
     left:1%;
   }
 
@@ -533,7 +533,7 @@ body{
   text-align: left;
   color:rosybrown;
   position: absolute;
-  top:192%;
+  top:175%;
   left:1%;
 }
 
@@ -543,7 +543,7 @@ body{
   text-align: left;
   color:rosybrown;
   position: absolute;
-  top:202%;
+  top:184%;
   left:2%;
 }
 .menuu1 a{
@@ -570,7 +570,7 @@ body{
   text-align: left;
   color:rosybrown;
   position: absolute;
-  top:222%;
+  top:202%;
   left:2%;
 }
 .menuu2 a{
@@ -598,7 +598,7 @@ body{
   text-align: left;
   color:rosybrown;
   position: absolute;
-  top:170%;
+  top:150%;
   left:52%;
 }
 .menuu3 a{
