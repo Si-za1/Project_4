@@ -277,7 +277,7 @@ ul li ul.hoverOn li{
  .container{
     display:flex;
     justify-content: center;
-    max-width:80%;
+    max-width:90%;
     border-radius: 10px;
     box-shadow: 2px 2px 10px paleturquoise ;
   }
@@ -289,11 +289,13 @@ ul li ul.hoverOn li{
     color: #e1306c;
   }
   
+  /*for the image hover text display*/
+  
   .card1, .card2, .card3{
   
   background-color: rgb(192, 248, 250);
   float: left;
-  max-width:20%;
+  max-width:25%;
   padding: 20px;
   text-align: center;
   color: black; 
@@ -345,7 +347,30 @@ ul li ul.hoverOn li{
     cursor: pointer;
    
   }
-  
+  .information{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+    cursor: pointer;
+   
+  }
+  .information1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+    cursor: pointer;
+   
+  }
+  .information2{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+    cursor: pointer;
+   
+  }
   
   input{
     padding:10px;
@@ -515,6 +540,57 @@ ul li ul.hoverOn li{
     border:none;
   }
 
+  /* for the description*/
+  #describe{
+  
+    background: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: #fff;
+    padding: 12px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  #describe:hover{
+    transition: 0.5s;
+    background:green;
+    color:black;
+    border:none;
+  }
+  #describe1{
+  
+    background: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: #fff;
+    padding: 12px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  #describe1:hover{
+    transition: 0.5s;
+    background:green;
+    color:black;
+    border:none;
+  }
+  
+  #describe2{
+  
+    background: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: #fff;
+    padding: 12px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  #describe2:hover{
+    transition: 0.5s;
+    background:green;
+    color:black;
+    border:none;
+  }
+  
   
 .maincourse{
     text-align:center;
