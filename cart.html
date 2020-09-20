@@ -2,10 +2,190 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="../css/cart.css" rel="stylesheet">
+    <link href="../css/footer.css" rel="stylesheet">
+
+    <title>Cart</title>
 </head>
 <body>
-    <h1> Welcome to your Cart Details Page:</h1>
+         <!--For the Welcome to the site -->
+  <div class="menu-wrap">
+    <input type="checkbox" class="toggler">  <!--Toggle only works with the checkbox so -->
+    <div class="hamburger"><div></div></div>
+    <div class="menu">
+        <div>
+            <div>
+                <ul>
+                    <li> <a href= "index.html">  Home </a></li>
+                    <li> <a href= "menu.html"> Menu  </a></li>
+                    <li> <a href= "reservation.html"> Reservations </a></li>
+                    <li> <a href= "reservation.html"> Events  </a></li>
+                    <li> <a href= "contact.html"> Contact </a> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+ <!-- For the hamburger menu -->
+
+  <div class="navbar">
+  <button onclick="Wel()" class="ty" id="WEL"> LoggedIn </button>
+  <a href ="cart.html" class="ty" id="WEL"> Cart
+    <i class="fas fa-cart-plus"></i>
+    <span>0</span></a>
+   <a href="reservation.html" class="ty"> Reservations </a>
+  </div>   
+ 
+    
+    <div class="container">
+      <h1>Cards</h1>
+      <table >
+          <thead>
+          <tr>
+        
+          <td><h5 class="no">S.No.</h5></td>
+          <td><h5 class="img">Image</h5></td>
+          <td><h5 class="dish">Dish</h5></td>
+          <td><h5 class="price">Price</h5></td>
+          <td><h5 class="qyantity">Quantity</h5></td>
+          <td><h5 class="total">Total</h5></td>
+        
+           </tr>
+       </thead>
+        
+        <tbody></tbody>
+        <tr>
+          <td>1.</td>
+          <td><img src="/images/chickenchoi.jpg" width="75px"></td>
+          <td>Chickhen Choila</td>
+          <td>RS 200</td>
+          <td><input type="number" value="1"> </td>
+          <td>Rs400.00</td>
+         </tr>
+         <tr>
+          <td>2.</td>
+          <td><img src="/images/mmomo.jpg" width="75px"></td>
+          <td>Chickhen Choila</td>
+          <td>RS 100</td>
+          <td><input type="number" value="1"> </td>
+          <td>Rs300.00</td>
+         </tr>
+        </tbody>
+         <tfoot>
+           <th colspan="4"></th>
+           <th ><h5>TOTAL</h5</th>
+            <th><h5>Rs 500.00 </h5></th>
+           </tfoot>
+
+      </table>
+      <button class="button b1"><a href="menu.html">STILL HUNGRY!</a></button>
+      <button class="button b2"><a href="final.html">PAY</a></button>
+   </div>
+    <div class="container-events">
+      <h1 >Events</h1>
+      <table >
+        <thead>
+          <tr>
+          
+          <td><h5 class="no">S.No.</h5></td>
+          <td><h5 class="events">Events</h5></td>
+          <td><h5 class="description">Descrpition</h5></td>
+          <td><h5 class="price">Price</h5></td>
+          </tr>
+       </thead>
+        
+        <tbody>
+        <tr>
+          <td>1.</td>
+           <td>Birthday</td>
+          <td>Gold</td>
+          <td>Rs 1200</td>
+          </tr>
+         <tr>
+          <td>2.</td>
+          <td>Date</td>
+          <td>Gold</td>
+          <td>Rs 1000</td>
+        </tr>
+        </tbody>
+         <tfoot>
+           <th colspan="2"></th>
+           <th ><h5>TOTAL</h5</th>
+            <th><h5>Rs 2200.00 </h5></th>
+           </tfoot>
+
+      </table>
+      <button class="button b1"><a href="events.html">Events</a></button>
+        <button class="button b2"><a href="final.html">PAY</a></button>
+     </div>
+    
+
+     <footer>
+      <div class="main-content">
+          <div class="left box">
+              <h2>About us</h2>
+              <div class="content">
+                  <p> 
+                      We are the student from the fourth semester, presenting this dummy website as the part of the project!
+                  </p>
+                   <div class="social">
+                       <a href="#"><span class="fab fa-facebook facebook"></span> </a>
+                       <a href="https://www.instagram.com/reserve_n_dine/?igshid=1itha2ff8ewp8"><span class="fab fa-instagram instagram"></span> </a>
+                       
+                   </div>    
+              </div>
+          </div>
+      
+
+      <div class="center box">
+          <h2>Address</h2>
+              <div class="content">
+                  <div class="place">
+                      <span class="fas fa-map-marker-alt"></span>
+                      <span class="text">Kathmandu University,Kavre</span>
+                  </div>
+                  <div class="phone">
+                      <span class="fas fa-phone-alt"></span>
+                      <span class="text">+977-9860341062,+977-9862274823,+977-9860840845,+977-9863329511</span>
+                  </div>
+                  <div class="email">
+                      <a href="mailto:reservendine2020@gmail.com? subject=subject text"><span class="fas fa-envelope envelope"></span></a>
+                      <span class="text"> reservendine2020@gmail.com </span>
+                  </div>
+
+              </div>
+      </div>
+
+      <div class="right box">
+          <h2>Contact us</h2>
+          <div class="content">
+              <form action ="#">
+                  <div class="email">
+                      <div class="text">Email *</div>
+                      <input type="email"required>
+                  </div>
+                  <div class="msg">
+                      <div class="text">Message *</div>
+                      <textarea name="name" row="8" cols="80" required></textarea>
+                  </div>
+                  <div class="btn">
+                      <button type="submit">Send</button>
+                  </div>
+
+              </form>
+          </div>
+      </div>
+  </div>
+
+  <div class="bottom">
+      <div class="copy">
+          <span class="credit" >Created By:<a href="main.html"> Reserve N' Dine </a></span>
+          <span class="far fa-copyright"></span><span>2020 All rights reserved</span>
+      </div>
+  </div>
+</footer>
 </body>
 </html>

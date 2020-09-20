@@ -354,39 +354,75 @@
             }
         }
 
+.centerbox{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    background:#4895a9;
+    color:white;
+}
+.rightbox{
+    display:flex;
+    flex-direction: row;
+    text-align:center;
+    justify-content: flex-end;
+}
+.footnote{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    background:#4895a9;
+    color:white;
+}
+.boxes{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    background:black;
+    color:white;
+}
 
-    /*for the logos */
-    .below{
-        position: absolute;
-        top:95%;
-        display: flex;
 
-    }
-
-    .below ul li{
-        list-style: none;
-        color:#fff;
-        display: inline-block;
-        margin: 0px 2px;
-    }
-    .below ul li .fa{
-        font-size: 50px;
-      
-    }
-    .below ul li a{
-        position: inherit;
-        border-width: thick;
-        margin:2px;
-        padding:6px;
-        background: rgba(154, 200, 240);
-        color:#111;
-        border-radius:50%;
-        transition:0.6s;
-    }
-
-    .below ul li a:hover{
-        color:green;
-        transform: translate(5px, 5px);
-    }
-
-    
+.email{
+    padding:12px;
+    color:pink;
+}
+.msg{
+    padding:12px;
+    color:pink;float:right;
+}
+.footdo{
+    font-size:22px;
+    padding:2px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    background:black;
+    color:white;
+}
+.bottom{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    background:black;
+    color:white;
+}
+  .send{
+      color:white;
+      background:black;
+      padding:12px;
+      position: relative;
+      top:20%;
+      left:100%;
+      bottom:2px;
+  }
+  .credit a{
+      text-decoration: none;
+      color:pink;
+  }
+  
