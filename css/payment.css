@@ -2,7 +2,15 @@
     margin:0px;
     padding:0px;
 }
-
+:root{
+  --primary-color:rgba(157, 195, 248, 0.401);
+  --overlay-color:rgba(24,59,51,0.85);   /*creating the variables to be used in the further styling areas.*/
+  --menu-speed: 0.60s;
+  --button-color: rgba(25, 25, 25, 0.91);
+}
+.body{
+  background: rgba(157, 195, 248, 0.401);
+}
 /*payment*/
 .payment{
     display:flex;
@@ -13,7 +21,7 @@
     font-size:40px;
     color:rosybrown;
     position: absolute;
-    top:13%;
+    top:5%;
     left:1%;
   }
 
@@ -22,7 +30,7 @@
     height: 440px;
     background: #000;
     color: #fff;
-    top: 50%;
+    top: 30%;
     left: 50%;
     position: absolute;
     top:55%;
