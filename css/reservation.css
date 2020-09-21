@@ -648,17 +648,13 @@ body{
   color:white;
 }
 
-
-.email{
-  margin-top:12px;
-  color:pink;
+label{
+  font-size:22px;
+  padding:22px;
+  
 }
-.email textarea{
-  padding:20px;
-}
-.msg{
-  padding:12px;
-  color:pink;float:right;
+.message{
+  padding:22px;
 }
 .footdo{
   font-size:22px;
@@ -680,7 +676,7 @@ body{
   background:black;
   color:white;
   position: relative;
-    top:20%
+  top:20%
 }
 .send{
     color:white;
@@ -688,7 +684,7 @@ body{
     padding:12px;
     position: relative;
     top:20%;
-    left:100%;
+    left:50%;
     bottom:2px;
 }
 .credit a{
