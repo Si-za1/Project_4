@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../js/reservation.js" async=""></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="../css/new.css" rel="stylesheet">
+  
+</head>
+<body>
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggler">  <!--Toggle only works with the checkbox so -->
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+            <div>
+                <div>
+                    <ul>
+                        <li> <a href= "main.html">  Home </a></li>
+                        <li> <a href= "menu.html"> Menu  </a></li>
+                        <li> <a href= "reservation.html"> Reservations </a></li>
+                        <li> <a href= "events.html"> Events  </a></li>
+                        <li> <a href= "contact.html"> Contact </a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="showcase">
+        <div class="navbar">
+        <a href="#" class="ty" id="button"> Logged In As: Name </a>
+        </div>
+        <div class =" container showcase-inner">
+           <h1>   Reservations</h1>
+            <p>
+                We bring you an opportunity to enjoy the essence of an interactive website. You can check the date from the calendar,
+                enjoy the facility of choosing the table according to the number of the people and book your date and time from the
+                calendar. 
+                Here, we allow you to use the customaizable theme that you can use for the special occassion
+                to make your special one more special and make those moments special.    
+           </p>
+           <a href="#" class="butn"> Scroll Down </a>
+           <h1 class="for">Select the Table For:</h1>
+            <select class="select">
+            <option value="Select the Table for:"> Select from here </option>
+            <option value="Table for 2">Table For 2 </option>
+            <option value="Table for 4"> Table For 4 </option>
+            <option value="Table for 6"> Table For 6 </option>
+            </select>  
+        </div>
+    </header>
+    <div class="main_Content">
+        
+        <h1 class="res"> Reserve your time and table  </h1>
+
+        <!--<p class ="menuu3"> <a href="final.html"> Final Reservation </a></p> -->    
+
+  
+                  <!-- Div 3:  Reservation Form -->
+                  <form id="Reservation-form" action="" method="POST">
+
+                 
+    
+                    <!-- Input Div -->
+                    <div class="input-div">
+                        <label for="id_check_in">Check In:</label>
+                        <input type="datetime-local" id="id_check_in" name="check_in">
+    
+                
+                        <label for="id_check_out">Check Out:</label>
+                        <input type="datetime-local" id="id_check_out" name="check_out">
+                   
+    
+                    <!-- Input Div -->
+                    <div >
+                        <button type="submit" class="book">Book the the table</button>
+                    </div>
+    
+                </form>
+    
+            </div> <!-- END Reservation Div -->
+    
+        <!--Menu Button -->
+        <div class="menu_btn">
+            <h1 class="menuu"> Menu </h1>
+           <p class ="menuu1"> <a href="menu.html">Pre-order </a></p> 
+        </div>
+    
+        <div class="payment-section">
+            <p class="mypara1"> Events </p>
+            <p class ="menuu2"> <a href="events.html"> Book </a></p> 
+        </div>
+    
+    
+    <div class="bottom">
+                    <div class="copy">
+                      <span class="credit" ><a href="main.html"> Reserve N' Dine </a></span>
+                      <span class="far fa-copyright"></span><span>2020 All rights reserved</span>
+                      <br>
+                    </div>
+                    <!--- <a href="https://www.facebook.com/siza.adhikari.7"><span class="fab fa-facebook facebook"></span></a>
+                      <span class="text"> <strong> facebook </strong> </span>
+                        <br>
+                
+    
+                <a href="https://instagram.com/reserve_n_dine?igshid=1itha2ff8ewp8" span class="fab fa-instagram instagram"></spam></a> 
+                <span class="text"> <strong> Instagram </strong> </span>
+                    </div>
+                    </div>
+                -->
+</body>
+</html>
