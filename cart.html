@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../css/cart.css" rel="stylesheet">
     <link href="../css/footer.css" rel="stylesheet">
@@ -70,19 +71,23 @@
           <td><img src="/images/mmomo.jpg" width="75px"></td>
           <td>Chickhen Choila</td>
           <td>RS 100</td>
-          <td><input type="number" value="1"> </td>
+          <td><form><input type="submit" value="-" class="minus" size="5"></form> 
+              <input type="number" value="1">
+              <form>
+              <input type="submit" value="+" class="add" size="5"> </form></td>
           <td>Rs300.00</td>
+        
          </tr>
         </tbody>
          <tfoot>
            <th colspan="4"></th>
-           <th ><h5>TOTAL</h5</th>
-            <th><h5>Rs 500.00 </h5></th>
-           </tfoot>
+           <th>Total:</th>
+           <th>Rs 5000</th>
+        </tfoot>
 
       </table>
       <button class="button b1"><a href="menu.html">STILL HUNGRY!</a></button>
-      <button class="button b2"><a href="final.html">PAY</a></button>
+    
    </div>
     <div class="container-events">
       <h1 >Events</h1>
@@ -94,6 +99,7 @@
           <td><h5 class="events">Events</h5></td>
           <td><h5 class="description">Descrpition</h5></td>
           <td><h5 class="price">Price</h5></td>
+          <td><h5 class="price">REMOVE</h5></td>
           </tr>
        </thead>
         
@@ -102,7 +108,8 @@
           <td>1.</td>
            <td>Birthday</td>
           <td>Gold</td>
-          <td>Rs 1200</td>
+          <td>Rs 1200</td><td>
+          <button class="button b4"></button></td>
           </tr>
          <tr>
           <td>2.</td>
@@ -113,24 +120,32 @@
         </tbody>
          <tfoot>
            <th colspan="2"></th>
-           <th ><h5>TOTAL</h5</th>
+           <th ><h5>TOTAL:</h5</th>
             <th><h5>Rs 2200.00 </h5></th>
            </tfoot>
 
       </table>
-      <button class="button b1"><a href="events.html">Events</a></button>
-        <button class="button b2"><a href="final.html">PAY</a></button>
+      <button class="button b3"><a href="events.html">Events</a></button>
      </div>
-    
+
+     <div class="grand-total">
+         <table>
+     <tr>
+        <td><strong>GRAND TOTAL:</strong> RS 6500</td>
+    </tr>
+        <tr>
+        <td><button class="button b2"><a href="final.html">PAY</a></button></td>
+        </tr>
+     </table>
+    </div>  
+
 
      <footer>
       <div class="main-content">
           <div class="left box">
               <h2>About us</h2>
               <div class="content">
-                  <p> 
-                      We are the student from the fourth semester, presenting this dummy website as the part of the project!
-                  </p>
+                  <p> We are the students from computer engineering . We have designed a sample website for the cafe! </p>
                    <div class="social">
                        <a href="#"><span class="fab fa-facebook facebook"></span> </a>
                        <a href="https://www.instagram.com/reserve_n_dine/?igshid=1itha2ff8ewp8"><span class="fab fa-instagram instagram"></span> </a>
@@ -153,7 +168,7 @@
                   </div>
                   <div class="email">
                       <a href="mailto:reservendine2020@gmail.com? subject=subject text"><span class="fas fa-envelope envelope"></span></a>
-                      <span class="text"> reservendine2020@gmail.com </span>
+                      <span class="text">reservendine2020@gmail.com</span>
                   </div>
 
               </div>
@@ -182,7 +197,7 @@
 
   <div class="bottom">
       <div class="copy">
-          <span class="credit" >Created By:<a href="main.html"> Reserve N' Dine </a></span>
+          <span class="credit" ><a href="main.html">Reserve N' Dine|</a></span>
           <span class="far fa-copyright"></span><span>2020 All rights reserved</span>
       </div>
   </div>
